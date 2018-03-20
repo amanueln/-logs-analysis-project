@@ -35,6 +35,8 @@ if successfully installed you will be able to run vagrant --version
 3. Change to the logs-analysis-project directory in your terminal with cd. Inside, you will find another directory
 called vagrant. Change directory to the vagrant directory:
 
+4. Download the database setup: [data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
+
 
 ##Start the virtual machine
 

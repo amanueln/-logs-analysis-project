@@ -45,6 +45,9 @@ connection is.
 2.  When vagrant up is finished running, you will get your shell prompt back. At this point, you can run `vagrant ssh` to log
 in to your newly installed Linux VM!
 
+#### Load the data into the database:
+1. Load the data using the following command: ``` psql -d news -f newsdata.sql ```
+
 3.  To access your shared files type: `cd /vagrant`
 
 4.  `ls` to see list of files

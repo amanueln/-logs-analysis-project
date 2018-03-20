@@ -28,11 +28,11 @@ if successfully installed you will be able to run vagrant --version
 
 ## Running the `newsdata.py`
 
-1. download the FSND-Virtual-Machine.zip
+1. download the logs-analysis-project.zip
 
 2. open git terminal, if you don't have it install it.
 
-3. Change to the  FSND-Virtual-Machine.zip directory in your terminal with cd. Inside, you will find another directory
+3. Change to the logs-analysis-project directory in your terminal with cd. Inside, you will find another directory
 called vagrant. Change directory to the vagrant directory:
 
 

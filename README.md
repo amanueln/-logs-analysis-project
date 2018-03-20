@@ -37,6 +37,8 @@ called vagrant. Change directory to the vagrant directory:
 
 4. Download the database setup: [data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 
+5. put database in the newsdata dir.
+
 
 ##Start the virtual machine
 

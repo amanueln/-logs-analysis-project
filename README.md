@@ -62,6 +62,6 @@ in to your newly installed Linux VM!
 
 7.  type: /usr/bin/python newsdb.py or python newsdb.py
 
-8. if ImportError: No module named termcolor appears, install it using: sudo pip install termcolor 
+8. if ImportError: No module named termcolor appears, install it using: ```sudo pip install termcolor``` 
 
 #####if your python file path is different run `whereis python` to get the path of python.

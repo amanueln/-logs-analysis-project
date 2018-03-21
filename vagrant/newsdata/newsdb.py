@@ -22,7 +22,7 @@ def run_query(query):
                                     port="")
 
         except Exception:
-            print("I am unable to connect to the database.")
+            print ("I am unable to connect to the database.")
 
         cur = conn.cursor()
         cur.execute(query)
@@ -43,14 +43,14 @@ def print_top_articles():
 
         result = run_query(query)
 
-        print(Quetion1)
+        print (Quetion1)
         count = 1
         for row in result:
             print("#%s top article: " + row[0] +
                   " with " + str(row[1]) + "views.") % count
             count += 1
     except Exception:
-        print("can't perform sql statement for Question 1 ")
+        print ("can't perform sql statement for Question 1 ")
 
 
 # question 2
@@ -68,15 +68,15 @@ def print_top_article_authors():
 
         result = run_query(query)
 
-        print(Quetion2)
+        print (Quetion2)
         count = 1
         for row in result:
-            print("#%s top Authors: " + row[0] + " with " +
+            print ("#%s top Authors: " + row[0] + " with " +
                    str(row[1]) + " views.") % count
             count += 1
 
     except Exception:
-        print("can't perform sql statement for question 2")
+        print ("can't perform sql statement for question 2")
 
 
 # Question 3
@@ -99,7 +99,7 @@ def print_request_errors():
 
         result = run_query(query)
 
-        print(Quetion3)
+        print (Quetion3)
         for row in result:
             if int(row[3]) > 1:
                 print("Answer : On " + row[0] + " request lead"

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import psycopg2
 from termcolor import colored
@@ -12,14 +12,11 @@ Quetion3 = colored("\nQuetion #3. On which days did more than 1 percent of"
                    " requests lead to errors? \n", 'yellow')
 
 
-# connects to DB and executes query before closing DB.
+
 def run_query(query):
+    """connects to DB and executes query before closing DB."""
         try:
-            conn = psycopg2.connect(database="news",
-                                    user="",
-                                    password="",
-                                    host="",
-                                    port="")
+            conn = psycopg2.connect(database="news")
 
         except Exception:
             print("I am unable to connect to the database.")
@@ -27,8 +24,8 @@ def run_query(query):
         cur = conn.cursor()
         cur.execute(query)
         rows = cur.fetchall()
-        return rows
         db.close()
+        return rows
 
 
 # Question 1
@@ -59,7 +56,7 @@ def print_top_article_authors():
         query = """
         SELECT
         authors.name, COUNT(log.path) as views FROM authors,log, articles
-        WHERE log.path LIKE '%'||articles.slug||'%'
+        WHERE log.path LIKE concat('/article/', articles.slug)
         AND authors.id = articles.author
         AND log.status = '200 OK'
         GROUP BY authors.name
@@ -77,7 +74,7 @@ def print_top_article_authors():
 
     except Exception:
         print("can't perform sql statement for question 2")
-
+` `
 
 # Question 3
 def print_request_errors():

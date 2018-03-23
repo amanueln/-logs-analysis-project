@@ -15,11 +15,7 @@ Quetion3 = colored("\nQuetion #3. On which days did more than 1 percent of"
 def run_query(query):
         ''' connects to DB and executes query before closing DB. '''
         try:
-            conn = psycopg2.connect(database="news",
-                                    user="",
-                                    password="",
-                                    host="",
-                                    port="")
+            conn = psycopg2.connect(database="news")
         except (Exception, psycopg2.DatabaseError) as error:
             print(error)
 

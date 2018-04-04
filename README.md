@@ -1,4 +1,4 @@
-#To start on this project, you'll need database software (provided by a Linux virtual machine) and the data to analyze.
+#To start on this project, you will need database software (provided by a Linux virtual machine) and the data to analyze.
 
 ##The virtual machine
 

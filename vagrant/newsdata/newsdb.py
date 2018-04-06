@@ -35,7 +35,7 @@ def print_top_articles():
            AND status='200 OK'
            GROUP BY title
            ORDER BY click_count DESC
-           LIMIT 3;"""
+           LIMIT 10;"""
 
         result = run_query(query)
 
